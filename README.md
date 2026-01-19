@@ -1,6 +1,10 @@
+
+
 # SafeCracker
 New Improved 2026
-SafeCraker is Part of the ECE(Evil Clown Empire) Products Group Created by Jeff Rogers. Do not be fooled by the name the Products Group was Created for Ethical Hacking and Blue Team. Also for Educational and Lab Testing.
+SafeCraker is Part of the ECE(Evil Clown Empire) Products Group Created by Jeff Rogers.
+Do not be fooled by the name the Products Group was Created for Ethical Hacking and Blue Team.
+Also for Educational and Lab Testing.
 SafeCraker (Blue Team Edition) — SSH Exposure Scanner
 
 SafeCraker-1.py is a Python 3.9+ threaded SSH exposure scanner for network owners/admins to identify where SSH is exposed and capture any SSH banner a service presents.
@@ -89,5 +93,9 @@ safecraker/
   README.md
   LICENSE.txt
   targets.txt
+
+  Run GUI:
+
+python3 safecraker_gui.py
 
   
