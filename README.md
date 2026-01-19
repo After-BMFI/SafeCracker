@@ -358,18 +358,49 @@ update-desktop-database ~/.local/share/applications
     LICENSE.txt
 
 ✅ Status: DONE
-
 ✔ SafeCraker GUI launcher
-
 ✔ pkexec elevation
-
 ✔ Custom icon wired
-
 ✔ Unified ECE layout
-
 ✔ Kali/Linux compliant
-
 ✔ Product-ready
+
+2) ✅ Multi-resolution .ico (Windows / cross-platform)
+From your existing PNGs:
+convert \
+  safecraker_256x256.png \
+  safecraker_128x128.png \
+  safecraker_96x96.png \
+  safecraker_64x64.png \
+  safecraker_48x48.png \
+  safecraker.ico
+✔ Single .ico with all resolutions
+✔ Works for Windows, installers, documentation
+
+3) ✅ Linux Icon Theme Folder (hicolor standard)
+Install all sizes properly:
+sudo install -Dm644 safecraker_256x256.png /usr/share/icons/hicolor/256x256/apps/safecraker.png
+sudo install -Dm644 safecraker_128x128.png /usr/share/icons/hicolor/128x128/apps/safecraker.png
+sudo install -Dm644 safecraker_96x96.png  /usr/share/icons/hicolor/96x96/apps/safecraker.png
+sudo install -Dm644 safecraker_64x64.png  /usr/share/icons/hicolor/64x64/apps/safecraker.png
+sudo install -Dm644 safecraker_48x48.png  /usr/share/icons/hicolor/48x48/apps/safecraker.png
+Update cache:
+sudo gtk-update-icon-cache /usr/share/icons/hicolor
+Then your .desktop can use:
+Icon=safecraker
+(no absolute path needed)
+
+4) ✅ Monochrome Panel Icon (system tray / dark mode)
+Create a single-color SVG or PNG derived from the main icon.
+Auto-generate monochrome PNG (black):
+convert safecraker_128x128.png \
+  -colorspace Gray -threshold 60% \
+  safecraker-symbolic.png
+Install:
+sudo install -Dm644 safecraker-symbolic.png \
+  /usr/share/icons/hicolor/symbolic/apps/safecraker-symbolic.png
+✔ Works with GNOME/KDE panels
+✔ Respects dark/light themes
 
 4) Shared ETHICS + LICENSE across all ECE tools
 File: /opt/ECE/shared/ETHICS.md
