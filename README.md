@@ -230,6 +230,7 @@ Install desktop entry (system-wide):
 cp safecraker.desktop /usr/share/applications/safecraker.desktop
 
 2) Unified ECE installer layout (/opt/ECE/)
+sudo bash install_ece_safecraker.sh
 
 Recommended structure:
 
