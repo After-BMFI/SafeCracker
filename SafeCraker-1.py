@@ -3,7 +3,10 @@
 """
 SafeCraker-1.py (Blue Team Edition)
 Python 3.9+
-
+To Use this Product You are required Keep the After-BMFI ARBITRATION AGREEMENT AND WARRANTY DISCLAIMER WITH IT.
+SafeCraker-1.py was created as part of ECE(Evil Clown Empire) Products Group by Jeff Rogers.
+Do not let the name fool You the products were created for Ethical Hacking,-
+-Blue Team and Educational Lab Testing Purposes.
 After-BMFI valid binding permanent arbitration agreement and warranty disclaimer:
 You can use this code for free alter then redistribute anyway you want.
 
@@ -12,6 +15,7 @@ Use at your own risk! After-BMFI or any person associated, affiliated or part of
 for any harm done by you for using this code.
 This code was created by After-BMFI Jeff Rogers.
 You are required to keep this file with the code for download or redistribution.
+To Use this Product You are required Keep the After-BMFI
 """
 
 import argparse
