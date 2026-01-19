@@ -24,10 +24,12 @@ Scan one or many ports (e.g., 22,2222 or 22-25)
 Threaded scanning for speed
 Captures SSH banners when available
 Prints results live + optional JSON report output
+
 Requirements
 Python 3.9+
 Linux distro: Kali, Debian/Ubuntu, Fedora/RHEL, Arch, etc.
 No external dependencies required
+
 Check Python version:
 python3 --version
 
@@ -121,15 +123,22 @@ python3 --version
 mkdir -p safecraker && cd safecraker
 python3 -m venv .venv
 source .venv/bin/activate
+
 Run scanner (CLI)
 python3 SafeCraker-1.py -H 192.168.1.0/24 -p 22,2222 -T 100 --open-only -o report.json
+
 Run scanner (GUI)
 python3 safecraker_gui.py
+
 Compare two reports (before vs after hardening)
 python3 compare_reports.py before.json after.json
+
 Lab Mode (offline training)
 python3 lab_mode.py --password "Example123!"
 python3 lab_mode.py --simulate --attempts 50 --limit 5 --window 30
+
+
+
 License (After-BMFI)
 Keep the BMFI agreement and warranty disclaimer with the code for download or redistribution.
 
