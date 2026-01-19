@@ -293,6 +293,76 @@ Git tag commands (when you’re ready)
 git tag -a v1.0.0 -m "SafeCraker v1.0.0"
 git push origin v1.0.0
 
+Addenum Desktop Launcher:
+Updated .desktop launcher (SafeCraker GUI)
+File: /usr/share/applications/safecraker.desktop
+[Desktop Entry]
+Type=Application
+Name=SafeCraker (Blue Team)
+Comment=SSH exposure scanner + reporting (authorized use)
+Exec=pkexec /opt/ECE/bin/safecraker/SafeCraker
+Icon=/opt/ECE/icons/safecraker.png    ******** 
+Terminal=false
+Categories=System;Network;Security;
+StartupNotify=true
+
+✔ Absolute icon path (best practice)
+✔ Works on Kali + most Linux distros
+✔ No theme dependency
+
+3) Verify launcher wrapper (already correct)
+File: /opt/ECE/bin/safecraker/SafeCraker
+#!/bin/bash
+cd /opt/ECE/bin/safecraker || exit 1
+exec python3 /opt/ECE/bin/safecraker/safecraker_gui.py
+
+Make sure it’s executable:
+
+chmod +x /opt/ECE/bin/safecraker/SafeCraker
+
+4) Refresh desktop cache
+
+Run one of these (or log out/in):
+
+sudo update-desktop-database
+
+or (per-user):
+
+update-desktop-database ~/.local/share/applications
+
+5) Final ECE layout snapshot (SafeCraker)
+/opt/ECE/
+  bin/
+    safecraker/
+      SafeCraker
+      SafeCraker-1.py
+      safecraker_gui.py
+      compare_reports.py
+      lab_mode.py
+      README.md
+      RELEASE_NOTES.md
+      ETHICS.md
+      LICENSE.txt
+  icons/
+    safecraker.png
+  shared/
+    ETHICS.md
+    LICENSE.txt
+
+✅ Status: DONE
+
+✔ SafeCraker GUI launcher
+
+✔ pkexec elevation
+
+✔ Custom icon wired
+
+✔ Unified ECE layout
+
+✔ Kali/Linux compliant
+
+✔ Product-ready
+
 4) Shared ETHICS + LICENSE across all ECE tools
 File: /opt/ECE/shared/ETHICS.md
 # ECE Ethical Use Statement
