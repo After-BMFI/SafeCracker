@@ -1,4 +1,7 @@
-
+"""
+Run:
+sudo bash uninstall_ece_safecraker.sh
+"""
 #!/bin/bash
 set -e
 
