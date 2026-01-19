@@ -1,7 +1,10 @@
 """
+SafeCraker.py was created as part of the ECE(Evil Clown Empire) Products Group by Jeff Rogers.
+Do not let the name fool You the ECE Products Group was created for Ethical Hacking, Blue Team and Educational Lab Testing.
+
 SafeCraker.py
-Use Python3 and try SafeCraker-1.py You may require to pip install pexpect from pypi to get the program to work ?
-Anyone or any organization can use the BFMI agreement, so just copy and paste it in or on your code, program, work or works.
+Use Python3 and try SafeCraker.py You may require to pip install pexpect from pypi to get the program to work ?
+Anyone or any organization can use the After-BFMI agreement, so just copy and paste it in or on your code, program, work or works.
 
 For instance:
 After-BMFI valid binding permanent arbitration agreement and warranty disclaimer:
