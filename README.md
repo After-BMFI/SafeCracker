@@ -212,18 +212,116 @@ This is perfectly aligned with Kali, pentest labs, and professional tooling.
 SafeCraker is now clean, defensible, professional, and publishable under ECE.
 You Are Required to Keep 100% of this README Document with all Versions Of SafeCraker After-BMFI ECE.
 
+SAFECRAKER ADDENNUM-2 GUI:
+
+File: /opt/ECE/bin/safecraker/SafeCraker (launcher wrapper)
+#!/bin/bash
+cd /opt/ECE/bin/safecraker || exit 1
+exec python3 /opt/ECE/bin/safecraker/safecraker_gui.py
 
 
+Make it executable:
+
+chmod +x /opt/ECE/bin/safecraker/SafeCraker
 
 
+Install desktop entry (system-wide):
+
+cp safecraker.desktop /usr/share/applications/safecraker.desktop
+
+2) Unified ECE installer layout (/opt/ECE/)
+
+Recommended structure:
+
+/opt/ECE/
+  bin/
+    safecraker/
+      SafeCraker              (launcher)
+      SafeCraker-1.py          (scanner engine)
+      safecraker_gui.py        (GUI)
+      compare_reports.py       (diff tool)
+      lab_mode.py              (offline training)
+      README.md
+      RELEASE_NOTES.md
+      ETHICS.md
+      LICENSE.txt
+  shared/
+    ETHICS.md
+    LICENSE.txt
+  icons/
+    ece.png                    (optional later)
 
 
+Why this layout works:
 
+Each tool is self-contained under /opt/ECE/bin/<toolname>/
 
+Shared legal/ethics live in /opt/ECE/shared/
 
+Desktop launchers always target stable wrapper scripts
 
+3) Version tagging + release notes
+Version tag standard (simple + clean)
+
+Use:
+
+vMAJOR.MINOR.PATCH
+Examples:
+
+v1.0.0 first public release
+
+v1.0.1 bugfix
+
+v1.1.0 new features
+
+File: RELEASE_NOTES.md (SafeCraker)
+# SafeCraker Release Notes
+
+## v1.0.0
+- Initial Blue Team release (Python 3.9+)
+- Threaded SSH exposure scanner (no authentication attempts)
+- GUI launcher included
+- JSON reporting + optional before/after comparison
+- Offline lab mode (password policy + rate-limit simulator)
+
+### Notes
+- SafeCraker does not attempt logins, password guessing, or brute force.
+- Use only on systems you own or have explicit permission to test.
+
+Git tag commands (when you’re ready)
+git tag -a v1.0.0 -m "SafeCraker v1.0.0"
+git push origin v1.0.0
+
+4) Shared ETHICS + LICENSE across all ECE tools
+File: /opt/ECE/shared/ETHICS.md
+# ECE Ethical Use Statement
+
+ECE tools are intended for ethical, defensive, and educational purposes by:
+- Network owners
+- System administrators
+- Authorized security professionals
+- Training/laboratory environments
+
+Do not use these tools on systems or networks you do not own or have explicit permission to test.
+
+All use is governed by the After-BMFI warranty disclaimer.
+
+File: /opt/ECE/shared/LICENSE.txt (After-BMFI)
+After-BMFI valid binding permanent arbitration agreement and warranty disclaimer:
+You can use this code for free alter then redistribute anyway you want.
+
+Warranty Disclaimer:
+Use at your own risk! AFTER-BMFI or any person associated, affiliated or part of AFTER-BMFI is not accountable or responsible for any harm done by you for using this code.
+This code was created by AFTER-BMFI Jeff Rogers.
+You are required to keep this file with the code for download or redistribution.
+
+Add these two lines to the top of each tool’s README
+This tool is governed by the shared ECE ETHICS and After-BMFI LICENSE:
+
+- /opt/ECE/shared/ETHICS.md
+- /opt/ECE/shared/LICENSE.txt
 License (After-BMFI)
-Keep the BMFI agreement and warranty disclaimer with the code for download or redistribution.
+Keep the After-BMFI agreement and warranty disclaimer with the code for download or redistribution.
 
 
 
