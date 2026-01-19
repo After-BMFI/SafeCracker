@@ -15,7 +15,6 @@ Use at your own risk! After-BMFI or any person associated, affiliated or part of
 for any harm done by you for using this code.
 This code was created by After-BMFI Jeff Rogers.
 You are required to keep this file with the code for download or redistribution.
-To Use this Product You are required Keep the After-BMFI
 """
 
 import argparse
