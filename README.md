@@ -64,7 +64,7 @@ Targets file format (targets.txt)
 
 One target per line. Comments allowed:
 
-# internal net
+# Internal net
 192.168.1.0/24
 10.0.0.5
 example.com
@@ -82,3 +82,12 @@ Notes / Limitations
 Banner capture is best-effort. Some servers don’t send banners until protocol negotiation.
 
 This tool does not determine server config (PasswordAuthentication, PermitRootLogin) remotely with certainty. Use it for exposure discovery and follow with on-host verification/hardening.
+
+Optional: Suggested folder structure
+safecraker/
+  SafeCraker-1.py
+  README.md
+  LICENSE.txt
+  targets.txt
+
+  
