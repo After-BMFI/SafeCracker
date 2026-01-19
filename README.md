@@ -251,14 +251,9 @@ Recommended structure:
     LICENSE.txt
   icons/
     ece.png                    (optional later)
-
-
 Why this layout works:
-
 Each tool is self-contained under /opt/ECE/bin/<toolname>/
-
 Shared legal/ethics live in /opt/ECE/shared/
-
 Desktop launchers always target stable wrapper scripts
 
 3) Version tagging + release notes
@@ -315,10 +310,23 @@ File: /opt/ECE/bin/safecraker/SafeCraker
 #!/bin/bash
 cd /opt/ECE/bin/safecraker || exit 1
 exec python3 /opt/ECE/bin/safecraker/safecraker_gui.py
-
 Make sure it’s executable:
-
 chmod +x /opt/ECE/bin/safecraker/SafeCraker
+
+Addenum Desktop Launcher:
+Desktop and other Icons for safecraker.desktop
+📁 Final placement (ECE standard)
+Rename one of them to safecraker.png (recommended: 128×128):
+sudo cp safecraker_128x128.png /opt/ECE/icons/safecraker.png
+sudo chmod 644 /opt/ECE/icons/safecraker.png
+Your .desktop file already points correctly:
+Icon=/opt/ECE/icons/safecraker.png
+✅ Result
+✔ Icon is desktop-appropriate
+✔ No wasted space
+✔ Scales cleanly
+✔ Professional look
+✔ Kali / Linux compliant
 
 4) Refresh desktop cache
 
