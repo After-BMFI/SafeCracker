@@ -98,4 +98,33 @@ safecraker/
 
 python3 safecraker_gui.py
 
+SafeCraker1.2.py:
+# SafeCraker (Blue Team Edition) — Python 3.9+
+
+SafeCraker is a **threaded SSH exposure scanner** for network owners/admins to discover where SSH is reachable and capture any banner presented.
+
+✅ No authentication attempts  
+✅ No password guessing / brute force  
+✅ Kali + most Linux distros
+
+## Install
+```bash
+python3 --version
+mkdir -p safecraker && cd safecraker
+python3 -m venv .venv
+source .venv/bin/activate
+Run scanner (CLI)
+python3 SafeCraker-1.py -H 192.168.1.0/24 -p 22,2222 -T 100 --open-only -o report.json
+Run scanner (GUI)
+python3 safecraker_gui.py
+Compare two reports (before vs after hardening)
+python3 compare_reports.py before.json after.json
+Lab Mode (offline training)
+python3 lab_mode.py --password "Example123!"
+python3 lab_mode.py --simulate --attempts 50 --limit 5 --window 30
+License (After-BMFI)
+Keep the BMFI agreement and warranty disclaimer with the code for download or redistribution.
+
+
+
   
