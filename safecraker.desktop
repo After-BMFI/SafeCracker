@@ -1,11 +1,11 @@
-
-
 [Desktop Entry]
 Type=Application
 Name=SafeCraker (Blue Team)
 Comment=SSH exposure scanner + reporting (authorized use)
 Exec=pkexec /opt/ECE/bin/safecraker/SafeCraker
-Icon=network-workgroup
+Icon=/opt/ECE/icons/safecraker.png
 Terminal=false
 Categories=System;Network;Security;
 StartupNotify=true
+
+
