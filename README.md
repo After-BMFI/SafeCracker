@@ -137,6 +137,89 @@ Lab Mode (offline training)
 python3 lab_mode.py --password "Example123!"
 python3 lab_mode.py --simulate --attempts 50 --limit 5 --window 30
 
+✅ SafeCraker — README (Addendum Section)
+
+README Addendum — Ethical, Authorized & Defensive Use
+
+SafeCraker is designed for ethical hacking, blue team operations, and defensive security assessment.
+
+This software is intended to be used only by:
+
+Network owners
+
+System administrators
+
+Authorized security professionals
+
+Educational or laboratory environments
+
+You must have explicit permission to scan, assess, or modify any system or network that you do not personally own.
+
+SafeCraker does not perform authentication, password guessing, brute force attacks, or unauthorized access.
+Its purpose is to help identify exposure, visibility, and hardening opportunities so networks can be secured and risks reduced.
+
+Use of this software implies acceptance of the After-BMFI arbitration agreement and warranty disclaimer included with this project.
+
+Authorized use only. Intended for ethical hacking, defensive security, and education.
+Do not scan systems you do not own or have explicit permission to test.
+Use at your own risk under the After-BMFI disclaimer.
+
+✅ Optional: ETHICS.md (Recommended for ECE consistency)
+
+Create a file named ETHICS.md in the SafeCraker root:
+
+# Ethical Use Statement
+
+SafeCraker is an Ethical Hacking and Blue Team security tool.
+
+It is intended to help system owners and administrators:
+- Discover exposed services
+- Understand attack surface visibility
+- Improve configuration and hardening
+- Educate and train security personnel
+
+Unauthorized use against systems you do not own or manage is prohibited.
+
+All use is governed by the After-BMFI warranty disclaimer.
+
+✅ GUI “About” Dialog Text (SafeCraker GUI)
+
+If you add (or already have) an About menu or dialog in the GUI, use this text verbatim:
+
+SafeCraker (Blue Team Edition)
+
+Ethical Hacking & Defensive Security Tool
+
+Designed for network owners, administrators, and authorized security testing.
+No authentication attempts. No brute force. No unauthorized access.
+
+Use at your own risk under the After-BMFI disclaimer.
+
+This is perfectly aligned with Kali, pentest labs, and professional tooling.
+
+✅ Final Status (SafeCraker)
+
+✔ Python 3.9+
+✔ Threaded exposure scanner
+✔ No login attempts
+✔ Kali + Linux compatible
+✔ CLI + GUI ready
+✔ After-BMFI preserved
+✔ Ethical hacking clearly stated
+✔ No legal overreach
+✔ Product-grade presentation
+
+SafeCraker is now clean, defensible, professional, and publishable under ECE.
+You Are Required to Keep 100% of this README Document with all Versions Of SafeCraker After-BMFI ECE.
+
+
+
+
+
+
+
+
+
 
 
 License (After-BMFI)
