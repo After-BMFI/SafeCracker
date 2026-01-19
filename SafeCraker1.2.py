@@ -1,4 +1,8 @@
 """
+New Improved 2026 SafeCraker is Part of the ECE(Evil Clown Empire) Products Group Created by Jeff Rogers.
+Do not be fooled by the name the Products Group was Created for Ethical Hacking and Blue Team.
+Also for Educational and Lab Testing.
+SafeCraker (Blue Team Edition) — SSH Exposure Scanner
 
 #!/usr/bin/env python3
 
