@@ -3,14 +3,14 @@
 # SafeCracker
 New Improved 2026
 To Use this Product You are required Keep the After-BMFI ARBITRATION AGREEMENT AND WARRANTY DISCLAIMER WITH IT.
-SafeCraker.py, SafeCraker-1.py and SafeCraker-1.2.py was created as part of ECE(Evil Clown Empire) Products Group by Jeff Rogers.
+SafeCraker.py, SafeCraker-1.py and SafeCraker-1.2.py was created as part of ECE(Evil Ethical Clown Empire) Products Group by Jeff Rogers Copyright Nutronix.pw.
 Do not let the name fool You the products were created for Ethical Hacking, Blue Team and Educational Lab Testing Purposes.
 After-BMFI valid binding permanent arbitration agreement and warranty disclaimer:
 You can use this code for free alter then redistribute anyway you want.
 
 Warranty Disclaimer:
-Use at your own risk! After-BMFI or any person associated, affiliated or part of After-BMFI is not accountable or responsible for any harm done by you for using this code.
-This code was created by After-BMFI Jeff Rogers.
+Use at your own risk! After-BMFI or Any Person or Organization associated, affiliated or part of After-BMFI is not accountable or responsible for any harm done by you for using this code.
+This code was created by After-BMFI Jeff Rogers Copyright Nutronix.pw.
 You are required to keep this file with the code for download or redistribution.
 
 SafeCraker (Blue Team Edition) — SSH Exposure Scanner
